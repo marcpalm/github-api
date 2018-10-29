@@ -78,4 +78,4 @@ const GithubFile = ({
 
 }
 
-exports.GithubFile = GithubFile
+module.exports.GithubFile = exports.GithubFile = GithubFile
