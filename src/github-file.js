@@ -10,13 +10,11 @@ const octokit = new Octokit()
  * @param {string} path Path of File
  */
 const GithubFile = ({
-    owner, repo, token, branch, path, folder
+    owner, repo, token, branch, path
 }) => {
     if (!path) {
         throw new Error('No path is defined')
     }
-
-    path = folder ? folder + '/' + path : path
 
     if (!token) {
         throw new Error('No token is defined')

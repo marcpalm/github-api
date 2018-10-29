@@ -71,7 +71,7 @@ describe('GithubWrapper', async () => {
     it('should read a specific file', async () => {
         const githubWrapper = await GithubWrapper(config)
 
-        const content = await githubWrapper.file('9eoxzeeey1.story').readContent()
+        const content = await githubWrapper.file(`${githubWrapper.root}/9eoxzeeey1.story`).readContent()
 
         expect(content).toBe('Hello World 2')
     })

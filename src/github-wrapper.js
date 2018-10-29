@@ -34,7 +34,6 @@ const GithubWrapper = async ({
     return {
         file: (path) => GithubFile({
             ...config,
-            folder: root,
             path
         }),
         getAllFiles,

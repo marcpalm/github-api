@@ -12,15 +12,14 @@ describe('GithubFile', () => {
 
     const folder = 'github-file'
 
-    const path = Math.random().toString(36).substring(2, 15) + '.story'
+    const path = folder + '/' + Math.random().toString(36).substring(2, 15) + '.story'
 
     const config = {
         owner: process.env.GITHUB_OWNER,
         repo: process.env.GITHUB_REPO,
         branch: process.env.GITHUB_BRANCH,
         token: process.env.GITHUB_TOKEN,
-        path,
-        folder
+        path
     }
 
     const githubFile = GithubFile(config)
