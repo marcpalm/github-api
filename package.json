@@ -1,5 +1,5 @@
 {
-  "name": "github-example",
+  "name": "github-api",
   "version": "1.0.0",
   "description": "Interacting with Github Api",
   "main": "src/index.js",
